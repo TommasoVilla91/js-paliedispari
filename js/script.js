@@ -1,9 +1,7 @@
-// DATO
-const userWord = prompt(`Inserisci una parola`);
-
-let isPalindrome = reverseString(word, userWord);
-console.log(isPalindrome);
+const userWord = prompt("Inserisci una parola");
 
 if(isPalindrome) {
-    
+    console.log("La parola è palindroma")
+} else {
+    console.log("La parola non è palindroma")
 }

@@ -4,7 +4,8 @@
  * @returns {string}
  */
 function reverseString(word) {
-    for(let i = word.length -1; i >= 0; i++) {
+    let result = "";
+    for (let i = word.length - 1; i >= 0; i++) {
         const curChar = word[i];
         result = result + curChar;
     }
@@ -19,7 +20,7 @@ function reverseString(word) {
  */
 function isPalindrome(word, userWord) {
     let isPalindrome = false;
-    for(let i = 0; i < word.length; i++) {
+    for (let i = 0; i < word.length; i++) {
         if (word[i] !== userWord[i]) {
             return false;
         }
