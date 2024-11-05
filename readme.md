@@ -12,7 +12,7 @@ ESECUZIONE LOGICA
 * funzione per per controllare se è palindroma confrontandola con l'originale
 
 OUTPUT
-se(isPalindrome) {
+se(parola utente === parola al contrario) {
     parola è palindroma
 } else {
     parola non è palindroma
