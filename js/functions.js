@@ -5,7 +5,7 @@
  */
 function reverseString(word) {
     let result = "";
-    for (let i = word.length - 1; i >= 0; i++) {
+    for (let i = word.length - 1; i >= 0; i--) {
         const curChar = word[i];
         result = result + curChar;
     }
@@ -14,14 +14,14 @@ function reverseString(word) {
 
 /**
  * constatare che le due parole siano palindrome
- * @param {string} word
+ * @param {string} reverseString
  * @param {string} userWord
  * @returns {boolean}
  */
-function isPalindrome(word, userWord) {
+function isPalindrome(reverseString, userWord) {
     let isPalindrome = false;
-    for (let i = 0; i < word.length; i++) {
-        if (word[i] !== userWord[i]) {
+    for (let i = 0; i < reverseString.length; i++) {
+        if (reverseString[i] !== userWord[i]) {
             return false;
         }
     }
